@@ -10,6 +10,32 @@ import java.util.stream.Stream;
 
 class StreamImplement{
     public static void main(String[] args) {
+
+        // java 8 features: Stream Api
+        //Stream API is used to process collections of objects.
+        //is a sequence of objects that supports various methods which can be pipelined to produce the desired resul
+
+        //If we want to use the concept of streams then stream() is the method to be used. Stream is available as an interface.contain two type of operation namely
+        //intermediate method and terminal method
+
+        // Stream s = c.stream();
+
+        // intermediate method
+        //filter, map , flatmap, mapToInt(),
+
+        // terminal method 
+        // count(), collect(), min(), max(), sorted() etc
+
+        
+
+
+
+
+
+
+
+
+
         // List<Integer> list = List.of(1,2,8,3,6);/// this is immutable list
         // System.out.println(list);
 

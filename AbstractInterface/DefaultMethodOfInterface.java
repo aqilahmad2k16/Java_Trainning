@@ -16,30 +16,49 @@ public class DefaultMethodOfInterface {
         // declare that method as a default in the interface and provide its
         // implementation in the interface itself.
 
-        Yes ys = new Yes();
-        Hello hl = new Yes();
+        // Yes ys = new Yes();
+        // Hello hl = new Yes();
 
-        ys.findTheWay();
-        ys.sayHello();
-        System.out.println("*************************************");
-        hl.findTheWay();
-        hl.sayHello();
+        // ys.findTheWay();
+        // ys.sayHello();
+        // System.out.println("*************************************");
+        // hl.findTheWay();
+        // hl.sayHello();
+
+        Heythere obj = new Mygoodness();
+        obj.findSum(45, 32);
+
+        obj.findProduct(12, 5);
     }
 }
 
-interface Hello{
-    void findTheWay();
+// interface Hello{
+//     void findTheWay();
 
-    default void sayHello(){
-        System.out.println("Hey there! ........");
-    }
+//     default void sayHello(){
+//         System.out.println("Hey there! ........");
+//     }
     
+// }
+
+// class Yes implements Hello{
+//     public void findTheWay(){
+//         System.out.println("new way of life.....");
+//     }
+
+
+// }
+
+interface Heythere{
+    public void findSum(int a,int b);
+
+    default void findProduct(int c, int d){
+        System.out.println("product of two number is " + c*d);
+    }
 }
 
-class Yes implements Hello{
-    public void findTheWay(){
-        System.out.println("new way of life.....");
+class Mygoodness implements Heythere{
+    public void findSum(int a, int b){
+        System.out.println(a+b);
     }
-
-
 }
